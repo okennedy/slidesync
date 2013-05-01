@@ -1,0 +1,25 @@
+{
+  "slides" : [
+    {
+      "content" : "<div class=\"present_main_title\">CSE 562: Database Systems</div><div class=\"present_main_title_subtext\"><b>Instructor: Oliver Kennedy</b><br/><i>okennedy@buffalo.edu</i></div>"
+    },
+    {
+      "title" : "Introduction to Database Systems",
+      "content" : "<img src=\"Slideshows/SoftwareCompanies.png\" width=287 height=500 />"
+    },
+    { "title" : "Why Study Databases?", 
+      "content" : "<ul><li>Datasets are continually increasing in diversity and volume<ul><li>Digital Libraries, Skyserver, Twitter, Phone Sensors</li></ul></li><li>Information is one of the most valuable resources in the modern age<ul><li>Database Management Systems are everywhere</li><li>Search engines are ubiquitous</li><li>100+ billion dollar a year industry<br/>(crucial knowledge in the job market)</li></ul></li><li>Databases touch on many aspects of CS<ul><li>OS, Programming Languages, ''A''I, Logic, ...</li></ul></li></ul>"
+    },
+    { "title" : "What is a Database (or DBMS)?",
+      "content" : "<ul><li>A very large, integrated collection of (curated?) data</li><li>A schema (or model) that dictates what kind of information appears in the data<ul><li>Entities (e.g., Students, Companies, Captains, Planets)</li><li>Relationships (e.g., Captain Kirk visited Vulcan)</li></ul></li><li>A Database Management System (DBMS) is a software package designed to store and manage databases</li></ul>"
+    },
+    {
+      "title": "Why use a DBMS?",
+      "content": "<ul><li>Rapid application development (through Queries)</li><li>Data Independence</li><li>Concurrent Access</li><li>Crash Recovery</li><li>Ease of Management</li></ul>"
+    },
+    {
+      "title": "General Information",
+      "content": "<ul><li><b>Course Website:</b> ((url goes here))<br/><i>We will be monitoring the forums closely!</i></li><li><b>Instructor:</b> Oliver Kennedy (<i>okennedy@buffalo.edu</i>)<br/><b>Office Hours:</b> M/Th, 2 PM-3 PM (or by appointment)</li><li><b>TA:</b> Alice (<i>...@buffalo.edu</i>)<br/><b>TA:</b> Bob (<i>...@buffalo.edu</i>)</li></ul>"
+    }
+  ]
+}
