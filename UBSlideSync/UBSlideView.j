@@ -129,13 +129,14 @@
   if((slide < 0) || (slide >= [content count])){
     CPLog.error("Invalid slide: %d", slide);
   } else {
+    var changingSlide = (slide != currSlide);
+    currSlide = slide;
     [self formatSlide];
-    if(slide != currSlide){
+    if(changingSlide){
       if([delegate respondsToSelector:@selector(slideView:loadedSlide:)]){
         [delegate slideView:self loadedSlide:slide];
       }
     }
-    currSlide = slide;
   }
 }
 

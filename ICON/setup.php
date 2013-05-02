@@ -278,7 +278,7 @@ function db_fetch($r){
       </p>
       <center><table>
         <?= make_option("Database Engine", "ICON_DB_DRIVER",
-                        array("postgres" => "Postgres", "mysql" => "MySQL")); ?>
+                        array("pgsql" => "Postgres", "mysql" => "MySQL")); ?>
         <?= make_input("Server Address",   "ICON_DB_SERVER"); ?>
         <?= make_input("Database Name",    "ICON_DB_DBNAME"); ?>
         <?= make_input("Database Account", "ICON_DB_ACCOUNT"); ?>
@@ -387,8 +387,41 @@ function db_fetch($r){
       ( 3, '/users/admin','{\"password\":\"\"}' )");
           }
           break;
-        case "postgres":
-          $conflicts = "Auto postgres setup has not been completed yet.";
+        case "pgsql":
+          $conflicts = db_query(
+            "CREATE TYPE event_type AS ENUM ('insert', 'delete')"
+          );
+          if(!$conflicts){
+            db_query(
+              "CREATE TABLE event (
+                timestamp int,
+                path varchar,
+                data text,
+                action event_type DEFAULT 'insert',
+                PRIMARY KEY (timestamp)
+              )"
+            );
+          }
+          if(!$conflicts){
+            db_query(
+              "CREATE SEQUENCE event_timestamp_seq OWNED BY event.timestamp"
+            );
+          }
+          if(!$conflicts){
+            db_query(
+              "ALTER TABLE event ALTER COLUMN timestamp 
+                 SET DEFAULT nextval('event_timestamp_seq')"
+            );
+          }
+          if(!$conflicts){
+            db_query(
+              "INSERT INTO event (path, data) VALUES
+      ( '/.auth', 
+        '{\"read\":{\"anonymous\":\"YES\"},\"write\":{\"admin\":\"YES\"}}' ),
+      ( '/instances/.auth',
+        '{\"read\":{\"anonymous\":\"YES\"},\"write\":{\"anonymous\":\"YES\"}}'),
+      ( '/users/admin','{\"password\":\"\"}' )");
+          }
           break;
         default:
           $conflicts = "Unknown DB driver $ICON_DB_DRIVER";
@@ -398,7 +431,7 @@ function db_fetch($r){
         { echo "</table>"; break; }
         
       echo "</table>";
-      echo "<p>Hugin is now installed.  Use it <a href=\"../\">here</a></p>";
+      echo "<p>ICON is now installed.  Use it <a href=\"../\">here</a></p>";
 
       break;
     

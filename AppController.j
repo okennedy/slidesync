@@ -36,25 +36,52 @@
     setAutoresizingMask:CPViewWidthSizable | CPViewHeightSizable];
   [theWindow setFullPlatformWindow:YES];
 
-  icon = [[ICON alloc] initWithServer:"http://mjolnir.cse.buffalo.edu/SlideSync/ICON/ICON.php"
-                       login:"anonymous"
-                       password:""
-                       path:"/slidesync/shows/01-IntroAndModeling"];
+  var args = [[CPApplication sharedApplication] arguments];
+  var show = "01-IntroAndModeling";
   isController = false;
+
+  if([args count] > 0){ 
+    show = [[args objectAtIndex:0] stringByReplacingOccurrencesOfString:"/"
+                                   withString:""];
+  } else {
+    window.location.href = window.location.href+"#"+show;
+  }
+  if([args count] > 1){ 
+    var i;
+    for(i = 1; i < [args count]; i++){
+      var arg = [args objectAtIndex:i];
+      if([arg isEqualToString:"admin"]){
+        CPLog("This site is a controller");
+        isController = true;
+      }
+    }
+  }
+
+  icon = [[ICON alloc] initWithServer:"ICON/ICON.php"
+                       login:"admin"
+                       password:"cookie"
+                       path:"slidesync/shows/"+show];
+  [icon setDelegate:self];
+}
+
+- (void)ICONLoginSuccess:(ICON)source
+{
+  [self setupSlideshow];
 }
 
 - (void)setupSlideshow
 {
-  slideController = [[UBSlideView alloc] initWithICON:icon];
+  slideController = [[UBSlideView alloc] init];
   [theWindow setInitialFirstResponder:[slideController commandView]];
   [[slideController view] setFrame:[[theWindow contentView] frame]];
       
   [[theWindow contentView] addSubview:[slideController view]];
   [slideController setDelegate:self];
-  [icon registerForUpdatesToPath:[self path]+"/slides"
+ 
+  [icon registerForUpdatesToPath:[icon path]+"/slides"
         target:self
         selector:@selector(slidesUpdated:)];
-  [icon registerForUpdatesToPath:[self path]+"/activeSlide"
+  [icon registerForUpdatesToPath:[icon path]+"/activeSlide"
         target:self
         selector:@selector(activeSlideUpdated:)];
 }
@@ -62,14 +89,26 @@
 - (void)slideView:(UBSlideView)view loadedSlide:(int)slide
 {
   if(isController){
-    [icon writeToPath:[self path]+"/activeSlide"
+    CPLog("Updating global view to slide %d", slide);
+    [icon writeToPath:[icon path]+"/activeSlide"
           data:""+slide];
+  } else {
+    CPLog("Stepped to slide: %d", slide);
   }
+}
+
+- (void)slidesUpdated:(id)newSlidesURL
+{
+  CPLog("New Slide Path: %@", newSlidesURL);
+  [slideController loadContent:newSlidesURL];
 }
 
 - (void)activeSlideUpdated:(id)newSlide
 {
-  CPLog("New Slide: %@", newSlide);
+  if(!isController){
+    CPLog("New Slide: %@", newSlide);
+    [slideController loadSlide:newSlide*1];
+  }
 }
 
 @end
