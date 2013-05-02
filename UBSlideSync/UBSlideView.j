@@ -12,6 +12,8 @@
   id currSlide;
   CPString slideURL;
   
+  BOOL fullScreenMode;
+  
   id delegate;
 }
 
@@ -24,6 +26,7 @@
          topLevelObjects:[CPArray array]];
     
     currSlide = 0;
+    fullScreenMode = NO;
   }
   return self;
 }
@@ -135,6 +138,23 @@
         [delegate slideView:self loadedSlide:slide];
       }
     }
+  }
+}
+
+- (void)fullScreen
+{ 
+  if(!fullScreenMode){
+    [[self view] enterFullScreenMode];
+    [self formatSlide];
+    fullScreenMode = YES;
+  }
+}
+
+- (void)exitFullScreen
+{
+  if(fullScreenMode){
+    [[self view] exitFullScreenMode];
+    fullScreenMode = NO;
   }
 }
 
