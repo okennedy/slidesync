@@ -24,8 +24,6 @@
          topLevelObjects:[CPArray array]];
     
     currSlide = 0;
-    
-    [self loadContent:"Slideshows/01-IntroAndModeling.json"];
   }
   return self;
 }

@@ -60,7 +60,7 @@
   icon = [[ICON alloc] initWithServer:"ICON/ICON.php"
                        login:"admin"
                        password:"cookie"
-                       path:"slidesync/shows/"+show];
+                       path:"slidesync/sessions/"+show];
   [icon setDelegate:self];
 }
 
