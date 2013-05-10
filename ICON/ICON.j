@@ -79,6 +79,14 @@
               target:target selector:selector];
 }
 
+- (void)unregisterForUpdatesToPath:(CPString)path
+        target:(CPString)target
+        selector:(SEL)selector
+{
+  [rootObject unregisterForUpdatesToPath:[path ICONNormalizedPath]
+              target:target];
+}
+
 - (void)deleteAtPath:(CPString)path
 {
   [self sendRequest:"delete"
@@ -565,6 +573,20 @@
       registerForUpdatesToPath:[self pathPop:path]
       target:target
       selector:selector];
+  }
+}
+
+- (void)unregisterForUpdatesToPath:(CPArray)path
+        target:(id)target
+{
+  if([path count] == 0){
+    [callbacks filterUsingPredicate:
+      [CPPredicate predicateWithFormat:"%@ == [%@ target]", target]
+    ];
+  } else {
+    [[self getChild:[path objectAtIndex:0]] 
+      unregisterForUpdatesToPath:[self pathPop:path]
+      target:target];
   }
 }
 @end

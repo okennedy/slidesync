@@ -1,818 +1,320 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>0BE14A8591F8BF3C809F65F3</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>_Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideView.h</string>
-			<key>path</key>
-			<string>.XcodeSupport/_Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideView.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>109D415EBD9AC2D83FCF31BE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>?</string>
-			<key>name</key>
-			<string>UBSlideView.j</string>
-			<key>path</key>
-			<string>UBSlideSync/UBSlideView.j</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>113C47308AD002E5F8848367</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>?</string>
-			<key>name</key>
-			<string>ICONObjectList.j</string>
-			<key>path</key>
-			<string>ICON/ICONObjectList.j</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>27734C38A1D3FECF61DC4017</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>_Users_okennedy_Public_SlideSync_ICON_ICONObjectList.m</string>
-			<key>path</key>
-			<string>.XcodeSupport/_Users_okennedy_Public_SlideSync_ICON_ICONObjectList.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>2C424A94AA8D74F10BCE2611</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>_Users_okennedy_Public_SlideSync_ICON_ICON.h</string>
-			<key>path</key>
-			<string>.XcodeSupport/_Users_okennedy_Public_SlideSync_ICON_ICON.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>2E744C209EAE2B4A094FE6F9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>_Users_okennedy_Public_SlideSync_ICON_ICONCollectionViewManager.h</string>
-			<key>path</key>
-			<string>.XcodeSupport/_Users_okennedy_Public_SlideSync_ICON_ICONCollectionViewManager.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>2FDA4C828048A7505A731F7F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>_Users_okennedy_Public_SlideSync_AppController.h</string>
-			<key>path</key>
-			<string>.XcodeSupport/_Users_okennedy_Public_SlideSync_AppController.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>43CC4D6588CEECADA206FEC8</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>?</string>
-			<key>name</key>
-			<string>ICONCollectionViewManager.j</string>
-			<key>path</key>
-			<string>ICON/ICONCollectionViewManager.j</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>45BF43B38E6A17614CBD32A9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>_Users_okennedy_Public_SlideSync_AppController.m</string>
-			<key>path</key>
-			<string>.XcodeSupport/_Users_okennedy_Public_SlideSync_AppController.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>4CE64BFDB96AA9A86DC93AD0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6A364CADAD9043E127ED0691</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>50394F5A8D91B7483669FF34</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D3034E1EB149184CB3024C64</string>
-				<string>2FDA4C828048A7505A731F7F</string>
-				<string>45BF43B38E6A17614CBD32A9</string>
-				<string>0BE14A8591F8BF3C809F65F3</string>
-				<string>6A364CADAD9043E127ED0691</string>
-				<string>5182421895BFECECDF4FB9D8</string>
-				<string>7B454194A9CD47148069B842</string>
-				<string>2C424A94AA8D74F10BCE2611</string>
-				<string>F5AF411DB372828CFC836DAA</string>
-				<string>2E744C209EAE2B4A094FE6F9</string>
-				<string>927D40EC938AD994A990100C</string>
-				<string>B6094B2D896EC60DB35E2D63</string>
-				<string>27734C38A1D3FECF61DC4017</string>
-				<string>73294CFF809B0296597F2506</string>
-				<string>99C84555A8E68E9099300B11</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Classes</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5182421895BFECECDF4FB9D8</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>_Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideCommandView.h</string>
-			<key>path</key>
-			<string>.XcodeSupport/_Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideCommandView.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>5F124464A2D36549447DFECA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>45BF43B38E6A17614CBD32A9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>68D44E26931551FB332CEBEE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>27734C38A1D3FECF61DC4017</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>691F41F788E712D350E1CCAB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7B454194A9CD47148069B842</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6A364CADAD9043E127ED0691</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>_Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideView.m</string>
-			<key>path</key>
-			<string>.XcodeSupport/_Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideView.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>73294CFF809B0296597F2506</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>_Users_okennedy_Public_SlideSync_ICON_ICONTableViewManager.h</string>
-			<key>path</key>
-			<string>.XcodeSupport/_Users_okennedy_Public_SlideSync_ICON_ICONTableViewManager.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>7B454194A9CD47148069B842</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>_Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideCommandView.m</string>
-			<key>path</key>
-			<string>.XcodeSupport/_Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideCommandView.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>846348CBA8AF313DBA8E38C8</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>?</string>
-			<key>name</key>
-			<string>ICONTableViewManager.j</string>
-			<key>path</key>
-			<string>ICON/ICONTableViewManager.j</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>927D40EC938AD994A990100C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>_Users_okennedy_Public_SlideSync_ICON_ICONCollectionViewManager.m</string>
-			<key>path</key>
-			<string>.XcodeSupport/_Users_okennedy_Public_SlideSync_ICON_ICONCollectionViewManager.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>92DF493BA292CF88169268EB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>?</string>
-			<key>name</key>
-			<string>UBSlideCommandView.j</string>
-			<key>path</key>
-			<string>UBSlideSync/UBSlideCommandView.j</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>99C84555A8E68E9099300B11</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>_Users_okennedy_Public_SlideSync_ICON_ICONTableViewManager.m</string>
-			<key>path</key>
-			<string>.XcodeSupport/_Users_okennedy_Public_SlideSync_ICON_ICONTableViewManager.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>9EEC4488135749D200615446</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9EEC44CB13574A0B00615446</string>
-				<string>9EEC4496135749D200615446</string>
-				<string>50394F5A8D91B7483669FF34</string>
-				<string>B8454EDAAF4F579FDC2966CC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9EEC448A135749D200615446</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0460</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>280 North, Inc.</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>9EEC448D135749D200615446</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>9EEC4488135749D200615446</string>
-			<key>productRefGroup</key>
-			<string>9EEC4494135749D200615446</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>9EEC4492135749D200615446</string>
-			</array>
-		</dict>
-		<key>9EEC448D135749D200615446</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>9EEC44C3135749D300615446</string>
-				<string>9EEC44C4135749D300615446</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>9EEC448F135749D200615446</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>5F124464A2D36549447DFECA</string>
-				<string>4CE64BFDB96AA9A86DC93AD0</string>
-				<string>691F41F788E712D350E1CCAB</string>
-				<string>F1174A70995FC221B17BFB3E</string>
-				<string>B2254E299906274572CD1F1C</string>
-				<string>68D44E26931551FB332CEBEE</string>
-				<string>CB89484899621F8497766E30</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>9EEC4490135749D200615446</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>9EEC4498135749D200615446</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>9EEC4491135749D200615446</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>9EEC44CC13574A0B00615446</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>9EEC4492135749D200615446</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>9EEC44C5135749D300615446</string>
-			<key>buildPhases</key>
-			<array>
-				<string>9EEC448F135749D200615446</string>
-				<string>9EEC4490135749D200615446</string>
-				<string>9EEC4491135749D200615446</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Another</string>
-			<key>productName</key>
-			<string>Another</string>
-			<key>productReference</key>
-			<string>9EEC4493135749D200615446</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>9EEC4493135749D200615446</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Another.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>9EEC4494135749D200615446</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9EEC4493135749D200615446</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9EEC4496135749D200615446</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9EEC4497135749D200615446</string>
-				<string>9EEC4499135749D300615446</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9EEC4497135749D200615446</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Cocoa.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Cocoa.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>9EEC4498135749D200615446</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9EEC4497135749D200615446</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9EEC4499135749D300615446</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9EEC449A135749D300615446</string>
-				<string>9EEC449B135749D300615446</string>
-				<string>9EEC449C135749D300615446</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Other Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9EEC449A135749D300615446</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>AppKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/AppKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>9EEC449B135749D300615446</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreData.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreData.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>9EEC449C135749D300615446</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>9EEC44C3135749D300615446</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_32_64_BIT)</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<string>DEBUG</string>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_VERSION</key>
-				<string>com.apple.compilers.llvm.clang.1_0</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>MACOSX_DEPLOYMENT_TARGET</key>
-				<string>10.6</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>macosx</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>9EEC44C4135749D300615446</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_32_64_BIT)</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_VERSION</key>
-				<string>com.apple.compilers.llvm.clang.1_0</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>MACOSX_DEPLOYMENT_TARGET</key>
-				<string>10.6</string>
-				<key>SDKROOT</key>
-				<string>macosx</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>9EEC44C5135749D300615446</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>9EEC44C6135749D300615446</string>
-				<string>9EEC44C7135749D300615446</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>9EEC44C6135749D300615446</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COMBINE_HIDPI_IMAGES</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_ENABLE_OBJC_EXCEPTIONS</key>
-				<string>YES</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Another/Another-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Another/Another-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>9EEC44C7135749D300615446</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>COMBINE_HIDPI_IMAGES</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>GCC_ENABLE_OBJC_EXCEPTIONS</key>
-				<string>YES</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Another/Another-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Another/Another-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>9EEC44CB13574A0B00615446</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder</string>
-			<key>name</key>
-			<string>CappuccinoResources</string>
-			<key>path</key>
-			<string>Resources</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9EEC44CC13574A0B00615446</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9EEC44CB13574A0B00615446</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A5F14F82B5D1420EB9F73B79</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>?</string>
-			<key>name</key>
-			<string>ICON.j</string>
-			<key>path</key>
-			<string>ICON/ICON.j</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>B1D540189C2B479246A454F0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>?</string>
-			<key>path</key>
-			<string>AppController.j</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>B2254E299906274572CD1F1C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>927D40EC938AD994A990100C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B6094B2D896EC60DB35E2D63</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>_Users_okennedy_Public_SlideSync_ICON_ICONObjectList.h</string>
-			<key>path</key>
-			<string>.XcodeSupport/_Users_okennedy_Public_SlideSync_ICON_ICONObjectList.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>B8454EDAAF4F579FDC2966CC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B1D540189C2B479246A454F0</string>
-				<string>109D415EBD9AC2D83FCF31BE</string>
-				<string>92DF493BA292CF88169268EB</string>
-				<string>A5F14F82B5D1420EB9F73B79</string>
-				<string>43CC4D6588CEECADA206FEC8</string>
-				<string>113C47308AD002E5F8848367</string>
-				<string>846348CBA8AF313DBA8E38C8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Sources</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CB89484899621F8497766E30</key>
-		<dict>
-			<key>fileRef</key>
-			<string>99C84555A8E68E9099300B11</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D3034E1EB149184CB3024C64</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>xcc_general_include.h</string>
-			<key>path</key>
-			<string>.XcodeSupport/xcc_general_include.h</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>F1174A70995FC221B17BFB3E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F5AF411DB372828CFC836DAA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F5AF411DB372828CFC836DAA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>_Users_okennedy_Public_SlideSync_ICON_ICON.m</string>
-			<key>path</key>
-			<string>.XcodeSupport/_Users_okennedy_Public_SlideSync_ICON_ICON.m</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>9EEC448A135749D200615446</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		194644C092121C382F947D07 /* _Users_okennedy_Public_SlideSync_SessionEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 589A45E5B4831F3F47A7666D /* _Users_okennedy_Public_SlideSync_SessionEditor.m */; };
+		4CE64BFDB96AA9A86DC93AD0 /* _Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A364CADAD9043E127ED0691 /* _Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideView.m */; };
+		5F124464A2D36549447DFECA /* _Users_okennedy_Public_SlideSync_AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BF43B38E6A17614CBD32A9 /* _Users_okennedy_Public_SlideSync_AppController.m */; };
+		68D44E26931551FB332CEBEE /* _Users_okennedy_Public_SlideSync_ICON_ICONObjectList.m in Sources */ = {isa = PBXBuildFile; fileRef = 27734C38A1D3FECF61DC4017 /* _Users_okennedy_Public_SlideSync_ICON_ICONObjectList.m */; };
+		691F41F788E712D350E1CCAB /* _Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideCommandView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B454194A9CD47148069B842 /* _Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideCommandView.m */; };
+		9EEC4498135749D200615446 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEC4497135749D200615446 /* Cocoa.framework */; };
+		9EEC44CC13574A0B00615446 /* CappuccinoResources in Resources */ = {isa = PBXBuildFile; fileRef = 9EEC44CB13574A0B00615446 /* CappuccinoResources */; };
+		B2254E299906274572CD1F1C /* _Users_okennedy_Public_SlideSync_ICON_ICONCollectionViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 927D40EC938AD994A990100C /* _Users_okennedy_Public_SlideSync_ICON_ICONCollectionViewManager.m */; };
+		CB89484899621F8497766E30 /* _Users_okennedy_Public_SlideSync_ICON_ICONTableViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C84555A8E68E9099300B11 /* _Users_okennedy_Public_SlideSync_ICON_ICONTableViewManager.m */; };
+		F1174A70995FC221B17BFB3E /* _Users_okennedy_Public_SlideSync_ICON_ICON.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AF411DB372828CFC836DAA /* _Users_okennedy_Public_SlideSync_ICON_ICON.m */; };
+		F81A4273A9C5EEF39D577720 /* (null) in Sources */ = {isa = PBXBuildFile; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0BE14A8591F8BF3C809F65F3 /* _Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = _Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideView.h; path = .XcodeSupport/_Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideView.h; sourceTree = SOURCE_ROOT; };
+		109D415EBD9AC2D83FCF31BE /* UBSlideView.j */ = {isa = PBXFileReference; lastKnownFileType = "?"; name = UBSlideView.j; path = UBSlideSync/UBSlideView.j; sourceTree = SOURCE_ROOT; };
+		113C47308AD002E5F8848367 /* ICONObjectList.j */ = {isa = PBXFileReference; lastKnownFileType = "?"; name = ICONObjectList.j; path = ICON/ICONObjectList.j; sourceTree = SOURCE_ROOT; };
+		27734C38A1D3FECF61DC4017 /* _Users_okennedy_Public_SlideSync_ICON_ICONObjectList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = _Users_okennedy_Public_SlideSync_ICON_ICONObjectList.m; path = .XcodeSupport/_Users_okennedy_Public_SlideSync_ICON_ICONObjectList.m; sourceTree = SOURCE_ROOT; };
+		2C424A94AA8D74F10BCE2611 /* _Users_okennedy_Public_SlideSync_ICON_ICON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = _Users_okennedy_Public_SlideSync_ICON_ICON.h; path = .XcodeSupport/_Users_okennedy_Public_SlideSync_ICON_ICON.h; sourceTree = SOURCE_ROOT; };
+		2E744C209EAE2B4A094FE6F9 /* _Users_okennedy_Public_SlideSync_ICON_ICONCollectionViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = _Users_okennedy_Public_SlideSync_ICON_ICONCollectionViewManager.h; path = .XcodeSupport/_Users_okennedy_Public_SlideSync_ICON_ICONCollectionViewManager.h; sourceTree = SOURCE_ROOT; };
+		2FDA4C828048A7505A731F7F /* _Users_okennedy_Public_SlideSync_AppController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = _Users_okennedy_Public_SlideSync_AppController.h; path = .XcodeSupport/_Users_okennedy_Public_SlideSync_AppController.h; sourceTree = SOURCE_ROOT; };
+		3C914D6AAA80C4152D522EB2 /* _Users_okennedy_Public_SlideSync_SessionEditor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = _Users_okennedy_Public_SlideSync_SessionEditor.h; path = .XcodeSupport/_Users_okennedy_Public_SlideSync_SessionEditor.h; sourceTree = SOURCE_ROOT; };
+		43CC4D6588CEECADA206FEC8 /* ICONCollectionViewManager.j */ = {isa = PBXFileReference; lastKnownFileType = "?"; name = ICONCollectionViewManager.j; path = ICON/ICONCollectionViewManager.j; sourceTree = SOURCE_ROOT; };
+		45BF43B38E6A17614CBD32A9 /* _Users_okennedy_Public_SlideSync_AppController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = _Users_okennedy_Public_SlideSync_AppController.m; path = .XcodeSupport/_Users_okennedy_Public_SlideSync_AppController.m; sourceTree = SOURCE_ROOT; };
+		5182421895BFECECDF4FB9D8 /* _Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideCommandView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = _Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideCommandView.h; path = .XcodeSupport/_Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideCommandView.h; sourceTree = SOURCE_ROOT; };
+		589A45E5B4831F3F47A7666D /* _Users_okennedy_Public_SlideSync_SessionEditor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = _Users_okennedy_Public_SlideSync_SessionEditor.m; path = .XcodeSupport/_Users_okennedy_Public_SlideSync_SessionEditor.m; sourceTree = SOURCE_ROOT; };
+		6A364CADAD9043E127ED0691 /* _Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = _Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideView.m; path = .XcodeSupport/_Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideView.m; sourceTree = SOURCE_ROOT; };
+		73294CFF809B0296597F2506 /* _Users_okennedy_Public_SlideSync_ICON_ICONTableViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = _Users_okennedy_Public_SlideSync_ICON_ICONTableViewManager.h; path = .XcodeSupport/_Users_okennedy_Public_SlideSync_ICON_ICONTableViewManager.h; sourceTree = SOURCE_ROOT; };
+		79D04F6F91CCE6ACA31AC6C9 /* SessionEditor.j */ = {isa = PBXFileReference; lastKnownFileType = "?"; path = SessionEditor.j; sourceTree = SOURCE_ROOT; };
+		7B454194A9CD47148069B842 /* _Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideCommandView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = _Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideCommandView.m; path = .XcodeSupport/_Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideCommandView.m; sourceTree = SOURCE_ROOT; };
+		846348CBA8AF313DBA8E38C8 /* ICONTableViewManager.j */ = {isa = PBXFileReference; lastKnownFileType = "?"; name = ICONTableViewManager.j; path = ICON/ICONTableViewManager.j; sourceTree = SOURCE_ROOT; };
+		927D40EC938AD994A990100C /* _Users_okennedy_Public_SlideSync_ICON_ICONCollectionViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = _Users_okennedy_Public_SlideSync_ICON_ICONCollectionViewManager.m; path = .XcodeSupport/_Users_okennedy_Public_SlideSync_ICON_ICONCollectionViewManager.m; sourceTree = SOURCE_ROOT; };
+		92DF493BA292CF88169268EB /* UBSlideCommandView.j */ = {isa = PBXFileReference; lastKnownFileType = "?"; name = UBSlideCommandView.j; path = UBSlideSync/UBSlideCommandView.j; sourceTree = SOURCE_ROOT; };
+		99C84555A8E68E9099300B11 /* _Users_okennedy_Public_SlideSync_ICON_ICONTableViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = _Users_okennedy_Public_SlideSync_ICON_ICONTableViewManager.m; path = .XcodeSupport/_Users_okennedy_Public_SlideSync_ICON_ICONTableViewManager.m; sourceTree = SOURCE_ROOT; };
+		9EEC4493135749D200615446 /* Another.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Another.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EEC4497135749D200615446 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		9EEC449A135749D300615446 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		9EEC449B135749D300615446 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9EEC449C135749D300615446 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9EEC44CB13574A0B00615446 /* CappuccinoResources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CappuccinoResources; path = Resources; sourceTree = "<group>"; };
+		A5F14F82B5D1420EB9F73B79 /* ICON.j */ = {isa = PBXFileReference; lastKnownFileType = "?"; name = ICON.j; path = ICON/ICON.j; sourceTree = SOURCE_ROOT; };
+		B1D540189C2B479246A454F0 /* AppController.j */ = {isa = PBXFileReference; lastKnownFileType = "?"; path = AppController.j; sourceTree = SOURCE_ROOT; };
+		B6094B2D896EC60DB35E2D63 /* _Users_okennedy_Public_SlideSync_ICON_ICONObjectList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = _Users_okennedy_Public_SlideSync_ICON_ICONObjectList.h; path = .XcodeSupport/_Users_okennedy_Public_SlideSync_ICON_ICONObjectList.h; sourceTree = SOURCE_ROOT; };
+		D3034E1EB149184CB3024C64 /* xcc_general_include.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xcc_general_include.h; path = .XcodeSupport/xcc_general_include.h; sourceTree = SOURCE_ROOT; };
+		F5AF411DB372828CFC836DAA /* _Users_okennedy_Public_SlideSync_ICON_ICON.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = _Users_okennedy_Public_SlideSync_ICON_ICON.m; path = .XcodeSupport/_Users_okennedy_Public_SlideSync_ICON_ICON.m; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9EEC4490135749D200615446 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EEC4498135749D200615446 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50394F5A8D91B7483669FF34 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D3034E1EB149184CB3024C64 /* xcc_general_include.h */,
+				2FDA4C828048A7505A731F7F /* _Users_okennedy_Public_SlideSync_AppController.h */,
+				45BF43B38E6A17614CBD32A9 /* _Users_okennedy_Public_SlideSync_AppController.m */,
+				0BE14A8591F8BF3C809F65F3 /* _Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideView.h */,
+				6A364CADAD9043E127ED0691 /* _Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideView.m */,
+				5182421895BFECECDF4FB9D8 /* _Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideCommandView.h */,
+				7B454194A9CD47148069B842 /* _Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideCommandView.m */,
+				2C424A94AA8D74F10BCE2611 /* _Users_okennedy_Public_SlideSync_ICON_ICON.h */,
+				F5AF411DB372828CFC836DAA /* _Users_okennedy_Public_SlideSync_ICON_ICON.m */,
+				2E744C209EAE2B4A094FE6F9 /* _Users_okennedy_Public_SlideSync_ICON_ICONCollectionViewManager.h */,
+				927D40EC938AD994A990100C /* _Users_okennedy_Public_SlideSync_ICON_ICONCollectionViewManager.m */,
+				B6094B2D896EC60DB35E2D63 /* _Users_okennedy_Public_SlideSync_ICON_ICONObjectList.h */,
+				27734C38A1D3FECF61DC4017 /* _Users_okennedy_Public_SlideSync_ICON_ICONObjectList.m */,
+				73294CFF809B0296597F2506 /* _Users_okennedy_Public_SlideSync_ICON_ICONTableViewManager.h */,
+				99C84555A8E68E9099300B11 /* _Users_okennedy_Public_SlideSync_ICON_ICONTableViewManager.m */,
+				3C914D6AAA80C4152D522EB2 /* _Users_okennedy_Public_SlideSync_SessionEditor.h */,
+				589A45E5B4831F3F47A7666D /* _Users_okennedy_Public_SlideSync_SessionEditor.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		9EEC4488135749D200615446 = {
+			isa = PBXGroup;
+			children = (
+				9EEC44CB13574A0B00615446 /* CappuccinoResources */,
+				9EEC4496135749D200615446 /* Frameworks */,
+				50394F5A8D91B7483669FF34 /* Classes */,
+				B8454EDAAF4F579FDC2966CC /* Sources */,
+			);
+			sourceTree = "<group>";
+		};
+		9EEC4494135749D200615446 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9EEC4493135749D200615446 /* Another.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9EEC4496135749D200615446 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9EEC4497135749D200615446 /* Cocoa.framework */,
+				9EEC4499135749D300615446 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9EEC4499135749D300615446 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9EEC449A135749D300615446 /* AppKit.framework */,
+				9EEC449B135749D300615446 /* CoreData.framework */,
+				9EEC449C135749D300615446 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		B8454EDAAF4F579FDC2966CC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B1D540189C2B479246A454F0 /* AppController.j */,
+				109D415EBD9AC2D83FCF31BE /* UBSlideView.j */,
+				92DF493BA292CF88169268EB /* UBSlideCommandView.j */,
+				A5F14F82B5D1420EB9F73B79 /* ICON.j */,
+				43CC4D6588CEECADA206FEC8 /* ICONCollectionViewManager.j */,
+				113C47308AD002E5F8848367 /* ICONObjectList.j */,
+				846348CBA8AF313DBA8E38C8 /* ICONTableViewManager.j */,
+				79D04F6F91CCE6ACA31AC6C9 /* SessionEditor.j */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9EEC4492135749D200615446 /* Another */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EEC44C5135749D300615446 /* Build configuration list for PBXNativeTarget "Another" */;
+			buildPhases = (
+				9EEC448F135749D200615446 /* Sources */,
+				9EEC4490135749D200615446 /* Frameworks */,
+				9EEC4491135749D200615446 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Another;
+			productName = Another;
+			productReference = 9EEC4493135749D200615446 /* Another.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9EEC448A135749D200615446 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "280 North, Inc.";
+			};
+			buildConfigurationList = 9EEC448D135749D200615446 /* Build configuration list for PBXProject "SlideSync" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9EEC4488135749D200615446;
+			productRefGroup = 9EEC4494135749D200615446 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9EEC4492135749D200615446 /* Another */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9EEC4491135749D200615446 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EEC44CC13574A0B00615446 /* CappuccinoResources in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9EEC448F135749D200615446 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F124464A2D36549447DFECA /* _Users_okennedy_Public_SlideSync_AppController.m in Sources */,
+				4CE64BFDB96AA9A86DC93AD0 /* _Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideView.m in Sources */,
+				691F41F788E712D350E1CCAB /* _Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideCommandView.m in Sources */,
+				F1174A70995FC221B17BFB3E /* _Users_okennedy_Public_SlideSync_ICON_ICON.m in Sources */,
+				B2254E299906274572CD1F1C /* _Users_okennedy_Public_SlideSync_ICON_ICONCollectionViewManager.m in Sources */,
+				68D44E26931551FB332CEBEE /* _Users_okennedy_Public_SlideSync_ICON_ICONObjectList.m in Sources */,
+				CB89484899621F8497766E30 /* _Users_okennedy_Public_SlideSync_ICON_ICONTableViewManager.m in Sources */,
+				F81A4273A9C5EEF39D577720 /* (null) in Sources */,
+				194644C092121C382F947D07 /* _Users_okennedy_Public_SlideSync_SessionEditor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9EEC44C3135749D300615446 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9EEC44C4135749D300615446 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9EEC44C6135749D300615446 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Another/Another-Prefix.pch";
+				INFOPLIST_FILE = "Another/Another-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9EEC44C7135749D300615446 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Another/Another-Prefix.pch";
+				INFOPLIST_FILE = "Another/Another-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9EEC448D135749D200615446 /* Build configuration list for PBXProject "SlideSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EEC44C3135749D300615446 /* Debug */,
+				9EEC44C4135749D300615446 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EEC44C5135749D300615446 /* Build configuration list for PBXNativeTarget "Another" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EEC44C6135749D300615446 /* Debug */,
+				9EEC44C7135749D300615446 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9EEC448A135749D200615446 /* Project object */;
+}

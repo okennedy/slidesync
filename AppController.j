@@ -8,8 +8,12 @@
 
 @import <Foundation/CPObject.j>
 
-@import "UBSlideSync/UBSlideView.j"
 @import "ICON/ICON.j"
+@import "ICON/ICONTableViewManager.j"
+
+@import "UBSlideSync/UBSlideView.j"
+
+@import "SessionEditor.j"
 
 ICON_SERVER = "ICON/ICON.php";
 
@@ -21,23 +25,23 @@ ICON_SERVER = "ICON/ICON.php";
   @outlet CPTextField loginPassword;
   @outlet CPTextField loginStatus;
   @outlet CPMenuItem  loginMenuItem;
+  
+  @outlet CPTableView sessionList;
+  @outlet CPTableColumn sessionNameColumn;
+  @outlet CPTableColumn sessionURLColumn;
+  @outlet CPView      sessionView;
+  ICONTableViewManager sessionListManager;
+  
+  
   ICON icon;
   UBSlideView slideController;
   BOOL isController;
   BOOL wantsController;
+  CPString show;
 }
 
 - (CPString)showPath
 {
-  var show = "001";
-  var args = [[CPApplication sharedApplication] arguments];
-
-  if([args count] > 0){ 
-    show = [[args objectAtIndex:0] stringByReplacingOccurrencesOfString:"/"
-                                   withString:""];
-  } else {
-    window.location.href = window.location.href+"#"+show;
-  }
   return "slidesync/sessions/"+show;
 }
 
@@ -63,9 +67,55 @@ ICON_SERVER = "ICON/ICON.php";
   icon = [[ICON alloc] initWithServer:ICON_SERVER
                        login:"anonymous"
                        password:""
-                       path:[self showPath]];
+                       path:""];
   [icon setDelegate:self];
-  [self setupSlideshow];
+
+  var args = [[CPApplication sharedApplication] arguments];
+  
+  show = nil;
+  if([args count] > 0){ 
+    show = [[args objectAtIndex:0] stringByReplacingOccurrencesOfString:"/"
+                                   withString:""];
+  }
+  if(show == nil){
+    [self setupPickSession];
+  } else {
+    [self setupSlideshow];
+  }
+}
+
+- (void)setupPickSession
+{
+  if(sessionListManager == nil){
+    [sessionView setAutoresizingMask:CPViewWidthSizable | CPViewHeightSizable];
+    sessionListManager = 
+      [[ICONTableViewManager alloc] 
+        initWithTable:sessionList
+        path:"slidesync/sessions"
+        icon:icon];
+  }
+  [sessionView setFrame:[[theWindow contentView] frame]];
+  [[theWindow contentView] addSubview:sessionView];
+}
+
+- (IBAction)editSession:(id)sender
+{
+  var key = [sessionListManager selectedKey];
+  if(key != nil){
+    [[[SessionEditor alloc] initWithICON:icon sessionID:key]
+      startSheetForWindow:theWindow];
+  }
+}
+
+- (IBAction)createSession:(id)sender
+{
+  [[[SessionEditor alloc] initWithICON:icon sessionID:nil]
+        startSheetForWindow:theWindow];
+}
+
+- (IBAction)deleteSession:(id)sender
+{
+
 }
 
 - (void)ICONLoginSuccess:(ICON)source
@@ -75,6 +125,8 @@ ICON_SERVER = "ICON/ICON.php";
     [theWindow setInitialFirstResponder:[slideController commandView]];
     [self endLogin:self];
     [loginMenuItem setEnabled:NO];
+    [sessionNameColumn setEditable:YES];
+    [sessionURLColumn setEditable:YES];
     isController = true;
   }
 }
@@ -94,10 +146,10 @@ ICON_SERVER = "ICON/ICON.php";
   [[theWindow contentView] addSubview:[slideController view]];
   [slideController setDelegate:self];
  
-  [icon registerForUpdatesToPath:[icon path]+"/slides"
+  [icon registerForUpdatesToPath:[self showPath]+"/slides"
         target:self
         selector:@selector(slidesUpdated:)];
-  [icon registerForUpdatesToPath:[icon path]+"/activeSlide"
+  [icon registerForUpdatesToPath:[self showPath]+"/activeSlide"
         target:self
         selector:@selector(activeSlideUpdated:)];
 }
@@ -106,7 +158,7 @@ ICON_SERVER = "ICON/ICON.php";
 {
   if(isController){
     CPLog("Updating global view to slide %d", slide);
-    [icon writeToPath:[icon path]+"/activeSlide"
+    [icon writeToPath:[self showPath]+"/activeSlide"
           data:""+slide];
   } else {
     CPLog("Stepped to slide: %d", slide);
@@ -161,7 +213,7 @@ ICON_SERVER = "ICON/ICON.php";
   [icon loginToServer:ICON_SERVER
         login:[loginUsername stringValue]
         password:[loginPassword stringValue]
-        path:[self showPath]];
+        path:""];
 }
 
 - (IBAction)endLogin:(id)sender
@@ -170,6 +222,7 @@ ICON_SERVER = "ICON/ICON.php";
   [loginStatus setStringValue:""];
   [[CPApplication sharedApplication] endSheet:loginWindow];
   [loginWindow performClose:self];
+  [loginWindow orderOut:self];
 }
 
 - (IBAction)goToFullScreen:(id)sender
