@@ -81,7 +81,6 @@
 
 - (void)unregisterForUpdatesToPath:(CPString)path
         target:(CPString)target
-        selector:(SEL)selector
 {
   [rootObject unregisterForUpdatesToPath:[path ICONNormalizedPath]
               target:target];
@@ -260,6 +259,12 @@
 {
   return timestamp;
 }
+
+- (CPString)server
+{
+  return server;
+}
+
 
 //////////////// Internals
 - (void)loginToServer:(CPString)in_server 
@@ -452,6 +457,10 @@
     [rootObject put:((u.action == "delete") ? undefined 
                                             : [u.data objectFromJSON]) 
                 at:[u.path ICONNormalizedPath]];
+    [[CPNotificationCenter defaultCenter] 
+      postNotificationName:"ICONUpdatePosted"
+      object:self
+      userInfo:u];
   }
   
   [self delayedRefresh];
@@ -580,9 +589,14 @@
         target:(id)target
 {
   if([path count] == 0){
-    [callbacks filterUsingPredicate:
-      [CPPredicate predicateWithFormat:"%@ == [%@ target]", target]
-    ];
+    var newCallbacks = [CPArray array];
+    var i;
+    for(i = 0; i < [callbacks count]; i++){
+      if(target != [[callbacks objectAtIndex:i] target]){
+        [newCallbacks addObject:target];
+      }
+    }
+    callbacks = newCallbacks;
   } else {
     [[self getChild:[path objectAtIndex:0]] 
       unregisterForUpdatesToPath:[self pathPop:path]

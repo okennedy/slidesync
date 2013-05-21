@@ -92,6 +92,11 @@
   return content[currSlide].title;
 }
 
+- (int)slideIndex
+{
+  return currSlide;
+}
+
 - (CPString)slideContent
 {
   var titleText = [self slideTitle];

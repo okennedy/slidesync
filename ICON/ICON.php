@@ -449,18 +449,27 @@ switch(get_arg("action", "read")){
     $ret["data"] = $obj;
     break;
   
+  case "events":
+    $isEvents = true;
   case "poll":
     $subscription = get_arg("subscription", null);
-    if($subscription == null) { icon_failure("Missing subscription"); }
-    $token = get_token();
-    $result = tree_read_query($token["path"], null, $token["timestamp"]);
     $data = array();
-    $new_timestamp = $token["timestamp"];
+    $user = get_login();
+    $new_timestamp = $old_timestamp = 0;
+    $path = "";
+    if(!$isEvents){
+      if($subscription == null) { icon_failure("Missing subscription"); }
+      $token = get_token();
+      $new_timestamp = $old_timestamp = $token["timestamp"];
+    } else {
+      $path = get_path();
+    }
+    $result = tree_read_query($path, null, $old_timestamp);
     while($row = fetch_array($result)){
       $new_timestamp = $row["timestamp"];
       $basename = basename($row["path"]);
       if($basename[0] != "."){
-        if(authorize_read($row["path"], $token["user"], false)){
+        if(authorize_read($row["path"], $user, false)){
           $data[] = array(
             "action" => $row["action"],
             "path" => $row["path"],
@@ -469,7 +478,7 @@ switch(get_arg("action", "read")){
         }
       }
     }
-    if($new_timestamp != $token["timestamp"]){
+    if((!$isEvents) && ($new_timestamp != $old_timestamp)){
       $ret["subscription"] = gen_token($token["user"], 
                                        $new_timestamp, 
                                        $token["path"]);
@@ -488,7 +497,7 @@ switch(get_arg("action", "read")){
     $path .= $now["sec"]."_".rand(0,100);
     
     $data = json_decode(get_arg("data", ""), true);
-    if($data == null){ icon_failure("Invalid data: '".get_arg("data", "")."'"); }
+    if($data === null){ icon_failure("Invalid data: '".get_arg("data", "")."'"); }
     $ret["timestamp"] = tree_write_one($path, $data);
     break;    
 
@@ -508,7 +517,7 @@ switch(get_arg("action", "read")){
       }
     }
     $data = json_decode(get_arg("data", ""), true);
-    if($data == null){ icon_failure("Invalid data: '".get_arg("data", "")."'"); }
+    if($data === null){ icon_failure("Invalid data: '".get_arg("data", "")."'"); }
     $ret["timestamp"] = tree_write_one($path, $data);
     break;
   case "delete":

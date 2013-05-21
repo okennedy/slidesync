@@ -12,8 +12,10 @@
 @import "ICON/ICONTableViewManager.j"
 
 @import "UBSlideSync/UBSlideView.j"
+@import "UBWhiteboard/UBWhiteboard.j"
 
 @import "SessionEditor.j"
+@import "LogViewer.j"
 
 ICON_SERVER = "ICON/ICON.php";
 
@@ -31,18 +33,31 @@ ICON_SERVER = "ICON/ICON.php";
   @outlet CPTableColumn sessionURLColumn;
   @outlet CPView      sessionView;
   ICONTableViewManager sessionListManager;
+  @outlet CPMenuItem  backToSessionMenuItem;
   
+  @outlet CPMenuItem  startSketchingMenuItem;
+  BOOL whiteboardActive;
   
   ICON icon;
   UBSlideView slideController;
   BOOL isController;
   BOOL wantsController;
-  CPString show;
+  
+  CPString session;
+  
+  UBWhiteboard whiteboard;
+  
+  LogViewer logViewer;
 }
 
-- (CPString)showPath
+- (CPString)sessionPath
 {
-  return "slidesync/sessions/"+show;
+  return "slidesync/sessions/"+session;
+}
+
+- (CPString)whiteboardPath
+{
+  return [self sessionPath]+"/wb/slide_"+[slideController slideIndex];
 }
 
 - (void)applicationDidFinishLaunching:(CPNotification)aNotification
@@ -52,15 +67,10 @@ ICON_SERVER = "ICON/ICON.php";
 
 - (void)awakeFromCib
 {
-  // This is called when the cib is done loading.
-  // You can implement this method on any object instantiated from a Cib.
-  // It's a useful hook for setting up current UI values, and other things.
-
-  // In this case, we want the window from Cib to become our full browser window
   [[theWindow contentView] 
     setAutoresizingMask:CPViewWidthSizable | CPViewHeightSizable];
   [theWindow setFullPlatformWindow:YES];
-
+  
   isController = false;
   wantsController = false;
 
@@ -69,23 +79,65 @@ ICON_SERVER = "ICON/ICON.php";
                        password:""
                        path:""];
   [icon setDelegate:self];
-
+  
+  logViewer = [[LogViewer alloc] initWithICON:icon];
+  [logViewer preload];
+  
+  whiteboard = [[UBWhiteboard alloc] initWithICON:icon
+                                     frame:[[theWindow contentView] frame]];
+  [whiteboard setFrameBase:CPRectMake(0,0,200.0,100.0)];
+  [whiteboard setDelegate:self];
+  whiteboardActive = NO;
+  
   var args = [[CPApplication sharedApplication] arguments];
   
-  show = nil;
+  session = nil;
   if([args count] > 0){ 
-    show = [[args objectAtIndex:0] stringByReplacingOccurrencesOfString:"/"
-                                   withString:""];
+    session = [[args objectAtIndex:0] stringByReplacingOccurrencesOfString:"/"
+                                      withString:""];
   }
-  if(show == nil){
+  if(session == nil){
     [self setupPickSession];
   } else {
     [self setupSlideshow];
   }
 }
 
+- (IBAction)closeWhiteboard:(id)sender
+{
+  [whiteboard removeFromSuperview];
+  whiteboardActive = NO;
+  [whiteboard unregister];
+  if(isController){
+    [startSketchingMenuItem setEnabled:YES];
+    [icon writeToPath:[self sessionPath]+"/whiteboardActive"
+          data:NO];
+  }
+}
+
+- (IBAction)openWhiteboard:(id)sender
+{
+  [[theWindow contentView] addSubview:whiteboard];
+  [whiteboard registerAtPath:[self whiteboardPath]];
+  whiteboardActive = YES;
+  [whiteboard activate:self];
+  if(isController){
+    [startSketchingMenuItem setEnabled:NO];
+    [icon writeToPath:[self sessionPath]+"/whiteboardActive"
+          data:YES];
+  }
+}
+
+- (void)moveWhiteboardToCurrentSlide
+{
+  [whiteboard unregister];
+  [whiteboard registerAtPath:[self whiteboardPath]];
+}
+
+
 - (void)setupPickSession
 {
+  [backToSessionMenuItem setEnabled:NO];
   if(sessionListManager == nil){
     [sessionView setAutoresizingMask:CPViewWidthSizable | CPViewHeightSizable];
     sessionListManager = 
@@ -118,6 +170,36 @@ ICON_SERVER = "ICON/ICON.php";
 
 }
 
+- (IBAction)startSession:(id)sender
+{
+  var key = [sessionListManager selectedKey];
+  if(key != nil){
+    document.location.href = 
+      [[document.location.href componentsSeparatedByString:"#"] 
+        objectAtIndex:0]+"#"+key;
+    session = key;
+    [sessionView removeFromSuperview];
+    [self setupSlideshow]
+  }
+}
+
+- (IBAction)leaveSession:(id)sender
+{
+  [[slideController view] removeFromSuperview];
+  [[logViewer view] removeFromSuperview];
+  [icon unregisterForUpdatesToPath:[self sessionPath]+"/slides"
+        target:self];
+  [icon unregisterForUpdatesToPath:[self sessionPath]+"/activeSlide"
+        target:self];
+  [icon unregisterForUpdatesToPath:[self sessionPath]+"/whiteboardActive"
+        target:self];
+  session = nil;
+  document.location.href = 
+    [[document.location.href componentsSeparatedByString:"#"] 
+      objectAtIndex:0]+"#";
+  [self setupPickSession];
+}
+
 - (void)ICONLoginSuccess:(ICON)source
 {
   CPLog("Login Successful");
@@ -127,6 +209,12 @@ ICON_SERVER = "ICON/ICON.php";
     [loginMenuItem setEnabled:NO];
     [sessionNameColumn setEditable:YES];
     [sessionURLColumn setEditable:YES];
+    [whiteboard setAllowsDraw:YES];
+    if(whiteboardActive){
+      [whiteboard activate:self];
+    } else {
+      [startSketchingMenuItem setEnabled:YES];
+    }
     isController = true;
   }
 }
@@ -140,28 +228,64 @@ ICON_SERVER = "ICON/ICON.php";
 
 - (void)setupSlideshow
 {
+  [backToSessionMenuItem setEnabled:YES];
   slideController = [[UBSlideView alloc] init];
-  [[slideController view] setFrame:[[theWindow contentView] frame]];
+  
+  var contentFrame = [[theWindow contentView] frame];
+  
+  
+  [[slideController view] setFrame:
+    CPMakeRect(contentFrame.origin.x,
+               contentFrame.origin.y,
+               contentFrame.size.width-400,
+               contentFrame.size.height)];
       
   [[theWindow contentView] addSubview:[slideController view]];
+
+  [[logViewer view] setFrame:
+    CPMakeRect(contentFrame.origin.x+contentFrame.size.width-400,
+               contentFrame.origin.y,
+               400,
+               contentFrame.size.height)];
+  [[theWindow contentView] addSubview:[logViewer view]];
+
   [slideController setDelegate:self];
  
-  [icon registerForUpdatesToPath:[self showPath]+"/slides"
+  [icon registerForUpdatesToPath:[self sessionPath]+"/slides"
         target:self
         selector:@selector(slidesUpdated:)];
-  [icon registerForUpdatesToPath:[self showPath]+"/activeSlide"
+  [icon registerForUpdatesToPath:[self sessionPath]+"/activeSlide"
         target:self
         selector:@selector(activeSlideUpdated:)];
+  [icon registerForUpdatesToPath:[self sessionPath]+"/whiteboardActive"
+        target:self
+        selector:@selector(whiteboardActiveChanged:)];
+}
+
+- (void)whiteboardActiveChanged:(BOOL)nowActive
+{
+  if(!isController){
+    if(nowActive != whiteboardActive){
+      if(nowActive){
+        [self openWhiteboard:self];
+      } else {
+        [self closeWhiteboard:self];
+      }
+    }
+  }
 }
 
 - (void)slideView:(UBSlideView)view loadedSlide:(int)slide
 {
   if(isController){
     CPLog("Updating global view to slide %d", slide);
-    [icon writeToPath:[self showPath]+"/activeSlide"
+    [icon writeToPath:[self sessionPath]+"/activeSlide"
           data:""+slide];
   } else {
     CPLog("Stepped to slide: %d", slide);
+  }
+  if(whiteboardActive){
+    [self moveWhiteboardToCurrentSlide];
   }
 }
 

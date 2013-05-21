@@ -80,10 +80,30 @@
 									<reference key="NSOnImage" ref="35465992"/>
 									<reference key="NSMixedImage" ref="502551668"/>
 								</object>
+								<object class="NSMenuItem" id="72463000">
+									<reference key="NSMenu" ref="110575045"/>
+									<bool key="NSIsDisabled">YES</bool>
+									<bool key="NSIsSeparator">YES</bool>
+									<string key="NSTitle"/>
+									<string key="NSKeyEquiv"/>
+									<int key="NSMnemonicLoc">2147483647</int>
+									<reference key="NSOnImage" ref="35465992"/>
+									<reference key="NSMixedImage" ref="502551668"/>
+								</object>
 								<object class="NSMenuItem" id="436982684">
 									<reference key="NSMenu" ref="110575045"/>
 									<string key="NSTitle">Login as Admin…</string>
 									<string key="NSKeyEquiv">l</string>
+									<int key="NSKeyEquivModMask">1048576</int>
+									<int key="NSMnemonicLoc">2147483647</int>
+									<reference key="NSOnImage" ref="35465992"/>
+									<reference key="NSMixedImage" ref="502551668"/>
+								</object>
+								<object class="NSMenuItem" id="222082525">
+									<reference key="NSMenu" ref="110575045"/>
+									<bool key="NSIsDisabled">YES</bool>
+									<string key="NSTitle">Full Screen</string>
+									<string key="NSKeyEquiv">f</string>
 									<int key="NSKeyEquivModMask">1048576</int>
 									<int key="NSMnemonicLoc">2147483647</int>
 									<reference key="NSOnImage" ref="35465992"/>
@@ -99,11 +119,10 @@
 									<reference key="NSOnImage" ref="35465992"/>
 									<reference key="NSMixedImage" ref="502551668"/>
 								</object>
-								<object class="NSMenuItem" id="222082525">
+								<object class="NSMenuItem" id="62173663">
 									<reference key="NSMenu" ref="110575045"/>
-									<bool key="NSIsDisabled">YES</bool>
-									<string key="NSTitle">Full Screen</string>
-									<string key="NSKeyEquiv">f</string>
+									<string key="NSTitle">Back to Sessions</string>
+									<string key="NSKeyEquiv">o</string>
 									<int key="NSKeyEquivModMask">1048576</int>
 									<int key="NSMnemonicLoc">2147483647</int>
 									<reference key="NSOnImage" ref="35465992"/>
@@ -136,8 +155,10 @@
 								</object>
 								<object class="NSMenuItem" id="551149017">
 									<reference key="NSMenu" ref="835318025"/>
+									<bool key="NSIsDisabled">YES</bool>
 									<string key="NSTitle">Sketch…</string>
-									<string key="NSKeyEquiv"/>
+									<string key="NSKeyEquiv">k</string>
+									<int key="NSKeyEquivModMask">1048576</int>
 									<int key="NSMnemonicLoc">2147483647</int>
 									<reference key="NSOnImage" ref="35465992"/>
 									<reference key="NSMixedImage" ref="502551668"/>
@@ -883,6 +904,46 @@
 					</object>
 					<int key="connectionID">518</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">startSession:</string>
+						<reference key="source" ref="635946545"/>
+						<reference key="destination" ref="392297929"/>
+					</object>
+					<int key="connectionID">519</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">backToSessionMenuItem</string>
+						<reference key="source" ref="635946545"/>
+						<reference key="destination" ref="62173663"/>
+					</object>
+					<int key="connectionID">523</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">leaveSession:</string>
+						<reference key="source" ref="635946545"/>
+						<reference key="destination" ref="62173663"/>
+					</object>
+					<int key="connectionID">524</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">openWhiteboard:</string>
+						<reference key="source" ref="635946545"/>
+						<reference key="destination" ref="551149017"/>
+					</object>
+					<int key="connectionID">525</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">startSketchingMenuItem</string>
+						<reference key="source" ref="635946545"/>
+						<reference key="destination" ref="551149017"/>
+					</object>
+					<int key="connectionID">526</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -951,6 +1012,8 @@
 							<reference ref="436982684"/>
 							<reference ref="222082525"/>
 							<reference ref="582281912"/>
+							<reference ref="72463000"/>
+							<reference ref="62173663"/>
 						</object>
 						<reference key="parent" ref="694149608"/>
 					</object>
@@ -1278,6 +1341,16 @@
 						<reference key="object" ref="1047204355"/>
 						<reference key="parent" ref="767407836"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">520</int>
+						<reference key="object" ref="72463000"/>
+						<reference key="parent" ref="110575045"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">521</int>
+						<reference key="object" ref="62173663"/>
+						<reference key="parent" ref="110575045"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -1336,6 +1409,8 @@
 					<string>512.IBPluginDependency</string>
 					<string>515.IBPluginDependency</string>
 					<string>516.IBPluginDependency</string>
+					<string>520.IBPluginDependency</string>
+					<string>521.IBPluginDependency</string>
 					<string>56.IBPluginDependency</string>
 					<string>57.IBPluginDependency</string>
 					<string>58.IBPluginDependency</string>
@@ -1397,6 +1472,8 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="unlocalizedProperties">
@@ -1411,7 +1488,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">518</int>
+			<int key="maxID">526</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -1423,16 +1500,24 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>closeWhiteboard:</string>
 							<string>createSession:</string>
 							<string>deleteSession:</string>
 							<string>editSession:</string>
 							<string>endLogin:</string>
 							<string>goToFullScreen:</string>
+							<string>leaveSession:</string>
 							<string>loginAsAdmin:</string>
+							<string>openWhiteboard:</string>
+							<string>startSession:</string>
 							<string>tryLogin:</string>
 						</object>
 						<object class="NSArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
+							<string>id</string>
+							<string>id</string>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>
@@ -1446,16 +1531,24 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>closeWhiteboard:</string>
 							<string>createSession:</string>
 							<string>deleteSession:</string>
 							<string>editSession:</string>
 							<string>endLogin:</string>
 							<string>goToFullScreen:</string>
+							<string>leaveSession:</string>
 							<string>loginAsAdmin:</string>
+							<string>openWhiteboard:</string>
+							<string>startSession:</string>
 							<string>tryLogin:</string>
 						</object>
 						<object class="NSArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<object class="IBActionInfo">
+								<string key="name">closeWhiteboard:</string>
+								<string key="candidateClassName">id</string>
+							</object>
 							<object class="IBActionInfo">
 								<string key="name">createSession:</string>
 								<string key="candidateClassName">id</string>
@@ -1477,7 +1570,19 @@
 								<string key="candidateClassName">id</string>
 							</object>
 							<object class="IBActionInfo">
+								<string key="name">leaveSession:</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBActionInfo">
 								<string key="name">loginAsAdmin:</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBActionInfo">
+								<string key="name">openWhiteboard:</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBActionInfo">
+								<string key="name">startSession:</string>
 								<string key="candidateClassName">id</string>
 							</object>
 							<object class="IBActionInfo">
@@ -1490,6 +1595,7 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>backToSessionMenuItem</string>
 							<string>loginMenuItem</string>
 							<string>loginPassword</string>
 							<string>loginStatus</string>
@@ -1499,10 +1605,12 @@
 							<string>sessionNameColumn</string>
 							<string>sessionURLColumn</string>
 							<string>sessionView</string>
+							<string>startSketchingMenuItem</string>
 							<string>theWindow</string>
 						</object>
 						<object class="NSArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>NSMenuItem</string>
 							<string>NSMenuItem</string>
 							<string>NSTextField</string>
 							<string>NSTextField</string>
@@ -1512,6 +1620,7 @@
 							<string>NSTableColumn</string>
 							<string>NSTableColumn</string>
 							<string>NSView</string>
+							<string>NSMenuItem</string>
 							<string>NSWindow</string>
 						</object>
 					</object>
@@ -1519,6 +1628,7 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>backToSessionMenuItem</string>
 							<string>loginMenuItem</string>
 							<string>loginPassword</string>
 							<string>loginStatus</string>
@@ -1528,10 +1638,15 @@
 							<string>sessionNameColumn</string>
 							<string>sessionURLColumn</string>
 							<string>sessionView</string>
+							<string>startSketchingMenuItem</string>
 							<string>theWindow</string>
 						</object>
 						<object class="NSArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<object class="IBToOneOutletInfo">
+								<string key="name">backToSessionMenuItem</string>
+								<string key="candidateClassName">NSMenuItem</string>
+							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">loginMenuItem</string>
 								<string key="candidateClassName">NSMenuItem</string>
@@ -1567,6 +1682,10 @@
 							<object class="IBToOneOutletInfo">
 								<string key="name">sessionView</string>
 								<string key="candidateClassName">NSView</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">startSketchingMenuItem</string>
+								<string key="candidateClassName">NSMenuItem</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">theWindow</string>

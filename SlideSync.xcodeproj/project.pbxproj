@@ -10,14 +10,19 @@
 		194644C092121C382F947D07 /* _Users_okennedy_Public_SlideSync_SessionEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 589A45E5B4831F3F47A7666D /* _Users_okennedy_Public_SlideSync_SessionEditor.m */; };
 		4CE64BFDB96AA9A86DC93AD0 /* _Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A364CADAD9043E127ED0691 /* _Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideView.m */; };
 		5F124464A2D36549447DFECA /* _Users_okennedy_Public_SlideSync_AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BF43B38E6A17614CBD32A9 /* _Users_okennedy_Public_SlideSync_AppController.m */; };
+		68274E058E8A255DDB8E7F43 /* _Users_okennedy_Public_SlideSync_UBWhiteboard_UBWhiteboard.m in Sources */ = {isa = PBXBuildFile; fileRef = B0EB4EEB9D9AF96692593D08 /* _Users_okennedy_Public_SlideSync_UBWhiteboard_UBWhiteboard.m */; };
 		68D44E26931551FB332CEBEE /* _Users_okennedy_Public_SlideSync_ICON_ICONObjectList.m in Sources */ = {isa = PBXBuildFile; fileRef = 27734C38A1D3FECF61DC4017 /* _Users_okennedy_Public_SlideSync_ICON_ICONObjectList.m */; };
 		691F41F788E712D350E1CCAB /* _Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideCommandView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B454194A9CD47148069B842 /* _Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideCommandView.m */; };
+		7B3D47248B015996BDA756FC /* _Users_okennedy_Public_SlideSync_UBGraphicsOverlay_UBGraphicsOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F743A79195F04AF29A90E1 /* _Users_okennedy_Public_SlideSync_UBGraphicsOverlay_UBGraphicsOverlay.m */; };
+		9B934874880BEC609B49FA17 /* _Users_okennedy_Public_SlideSync_LogViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5E49DAA980F91B51B23C7B /* _Users_okennedy_Public_SlideSync_LogViewer.m */; };
 		9EEC4498135749D200615446 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEC4497135749D200615446 /* Cocoa.framework */; };
 		9EEC44CC13574A0B00615446 /* CappuccinoResources in Resources */ = {isa = PBXBuildFile; fileRef = 9EEC44CB13574A0B00615446 /* CappuccinoResources */; };
 		B2254E299906274572CD1F1C /* _Users_okennedy_Public_SlideSync_ICON_ICONCollectionViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 927D40EC938AD994A990100C /* _Users_okennedy_Public_SlideSync_ICON_ICONCollectionViewManager.m */; };
 		CB89484899621F8497766E30 /* _Users_okennedy_Public_SlideSync_ICON_ICONTableViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C84555A8E68E9099300B11 /* _Users_okennedy_Public_SlideSync_ICON_ICONTableViewManager.m */; };
+		E2834912971F52D1D9769C81 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		F1174A70995FC221B17BFB3E /* _Users_okennedy_Public_SlideSync_ICON_ICON.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AF411DB372828CFC836DAA /* _Users_okennedy_Public_SlideSync_ICON_ICON.m */; };
 		F81A4273A9C5EEF39D577720 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		FCE749E5B886ACBA221892D3 /* (null) in Sources */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,7 @@
 		113C47308AD002E5F8848367 /* ICONObjectList.j */ = {isa = PBXFileReference; lastKnownFileType = "?"; name = ICONObjectList.j; path = ICON/ICONObjectList.j; sourceTree = SOURCE_ROOT; };
 		27734C38A1D3FECF61DC4017 /* _Users_okennedy_Public_SlideSync_ICON_ICONObjectList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = _Users_okennedy_Public_SlideSync_ICON_ICONObjectList.m; path = .XcodeSupport/_Users_okennedy_Public_SlideSync_ICON_ICONObjectList.m; sourceTree = SOURCE_ROOT; };
 		2C424A94AA8D74F10BCE2611 /* _Users_okennedy_Public_SlideSync_ICON_ICON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = _Users_okennedy_Public_SlideSync_ICON_ICON.h; path = .XcodeSupport/_Users_okennedy_Public_SlideSync_ICON_ICON.h; sourceTree = SOURCE_ROOT; };
+		2D5E49DAA980F91B51B23C7B /* _Users_okennedy_Public_SlideSync_LogViewer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = _Users_okennedy_Public_SlideSync_LogViewer.m; path = .XcodeSupport/_Users_okennedy_Public_SlideSync_LogViewer.m; sourceTree = SOURCE_ROOT; };
 		2E744C209EAE2B4A094FE6F9 /* _Users_okennedy_Public_SlideSync_ICON_ICONCollectionViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = _Users_okennedy_Public_SlideSync_ICON_ICONCollectionViewManager.h; path = .XcodeSupport/_Users_okennedy_Public_SlideSync_ICON_ICONCollectionViewManager.h; sourceTree = SOURCE_ROOT; };
 		2FDA4C828048A7505A731F7F /* _Users_okennedy_Public_SlideSync_AppController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = _Users_okennedy_Public_SlideSync_AppController.h; path = .XcodeSupport/_Users_okennedy_Public_SlideSync_AppController.h; sourceTree = SOURCE_ROOT; };
 		3C914D6AAA80C4152D522EB2 /* _Users_okennedy_Public_SlideSync_SessionEditor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = _Users_okennedy_Public_SlideSync_SessionEditor.h; path = .XcodeSupport/_Users_okennedy_Public_SlideSync_SessionEditor.h; sourceTree = SOURCE_ROOT; };
@@ -33,14 +39,18 @@
 		45BF43B38E6A17614CBD32A9 /* _Users_okennedy_Public_SlideSync_AppController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = _Users_okennedy_Public_SlideSync_AppController.m; path = .XcodeSupport/_Users_okennedy_Public_SlideSync_AppController.m; sourceTree = SOURCE_ROOT; };
 		5182421895BFECECDF4FB9D8 /* _Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideCommandView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = _Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideCommandView.h; path = .XcodeSupport/_Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideCommandView.h; sourceTree = SOURCE_ROOT; };
 		589A45E5B4831F3F47A7666D /* _Users_okennedy_Public_SlideSync_SessionEditor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = _Users_okennedy_Public_SlideSync_SessionEditor.m; path = .XcodeSupport/_Users_okennedy_Public_SlideSync_SessionEditor.m; sourceTree = SOURCE_ROOT; };
+		5BF04788A14C606EF5C982A5 /* _Users_okennedy_Public_SlideSync_UBGraphicsOverlay_UBGraphicsOverlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = _Users_okennedy_Public_SlideSync_UBGraphicsOverlay_UBGraphicsOverlay.h; path = .XcodeSupport/_Users_okennedy_Public_SlideSync_UBGraphicsOverlay_UBGraphicsOverlay.h; sourceTree = SOURCE_ROOT; };
 		6A364CADAD9043E127ED0691 /* _Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = _Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideView.m; path = .XcodeSupport/_Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideView.m; sourceTree = SOURCE_ROOT; };
 		73294CFF809B0296597F2506 /* _Users_okennedy_Public_SlideSync_ICON_ICONTableViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = _Users_okennedy_Public_SlideSync_ICON_ICONTableViewManager.h; path = .XcodeSupport/_Users_okennedy_Public_SlideSync_ICON_ICONTableViewManager.h; sourceTree = SOURCE_ROOT; };
+		76F44FF5AE4E867C0CBEBB0E /* _Users_okennedy_Public_SlideSync_UBWhiteboard_UBWhiteboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = _Users_okennedy_Public_SlideSync_UBWhiteboard_UBWhiteboard.h; path = .XcodeSupport/_Users_okennedy_Public_SlideSync_UBWhiteboard_UBWhiteboard.h; sourceTree = SOURCE_ROOT; };
 		79D04F6F91CCE6ACA31AC6C9 /* SessionEditor.j */ = {isa = PBXFileReference; lastKnownFileType = "?"; path = SessionEditor.j; sourceTree = SOURCE_ROOT; };
 		7B454194A9CD47148069B842 /* _Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideCommandView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = _Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideCommandView.m; path = .XcodeSupport/_Users_okennedy_Public_SlideSync_UBSlideSync_UBSlideCommandView.m; sourceTree = SOURCE_ROOT; };
 		846348CBA8AF313DBA8E38C8 /* ICONTableViewManager.j */ = {isa = PBXFileReference; lastKnownFileType = "?"; name = ICONTableViewManager.j; path = ICON/ICONTableViewManager.j; sourceTree = SOURCE_ROOT; };
+		89F743A79195F04AF29A90E1 /* _Users_okennedy_Public_SlideSync_UBGraphicsOverlay_UBGraphicsOverlay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = _Users_okennedy_Public_SlideSync_UBGraphicsOverlay_UBGraphicsOverlay.m; path = .XcodeSupport/_Users_okennedy_Public_SlideSync_UBGraphicsOverlay_UBGraphicsOverlay.m; sourceTree = SOURCE_ROOT; };
 		927D40EC938AD994A990100C /* _Users_okennedy_Public_SlideSync_ICON_ICONCollectionViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = _Users_okennedy_Public_SlideSync_ICON_ICONCollectionViewManager.m; path = .XcodeSupport/_Users_okennedy_Public_SlideSync_ICON_ICONCollectionViewManager.m; sourceTree = SOURCE_ROOT; };
 		92DF493BA292CF88169268EB /* UBSlideCommandView.j */ = {isa = PBXFileReference; lastKnownFileType = "?"; name = UBSlideCommandView.j; path = UBSlideSync/UBSlideCommandView.j; sourceTree = SOURCE_ROOT; };
 		99C84555A8E68E9099300B11 /* _Users_okennedy_Public_SlideSync_ICON_ICONTableViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = _Users_okennedy_Public_SlideSync_ICON_ICONTableViewManager.m; path = .XcodeSupport/_Users_okennedy_Public_SlideSync_ICON_ICONTableViewManager.m; sourceTree = SOURCE_ROOT; };
+		9CD0437BA7F722FE00439057 /* LogViewer.j */ = {isa = PBXFileReference; lastKnownFileType = "?"; path = LogViewer.j; sourceTree = SOURCE_ROOT; };
 		9EEC4493135749D200615446 /* Another.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Another.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EEC4497135749D200615446 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		9EEC449A135749D300615446 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -48,9 +58,13 @@
 		9EEC449C135749D300615446 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9EEC44CB13574A0B00615446 /* CappuccinoResources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CappuccinoResources; path = Resources; sourceTree = "<group>"; };
 		A5F14F82B5D1420EB9F73B79 /* ICON.j */ = {isa = PBXFileReference; lastKnownFileType = "?"; name = ICON.j; path = ICON/ICON.j; sourceTree = SOURCE_ROOT; };
+		B0EB4EEB9D9AF96692593D08 /* _Users_okennedy_Public_SlideSync_UBWhiteboard_UBWhiteboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = _Users_okennedy_Public_SlideSync_UBWhiteboard_UBWhiteboard.m; path = .XcodeSupport/_Users_okennedy_Public_SlideSync_UBWhiteboard_UBWhiteboard.m; sourceTree = SOURCE_ROOT; };
 		B1D540189C2B479246A454F0 /* AppController.j */ = {isa = PBXFileReference; lastKnownFileType = "?"; path = AppController.j; sourceTree = SOURCE_ROOT; };
 		B6094B2D896EC60DB35E2D63 /* _Users_okennedy_Public_SlideSync_ICON_ICONObjectList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = _Users_okennedy_Public_SlideSync_ICON_ICONObjectList.h; path = .XcodeSupport/_Users_okennedy_Public_SlideSync_ICON_ICONObjectList.h; sourceTree = SOURCE_ROOT; };
+		C1EF4773AA74EA43DE436433 /* UBWhiteboard.j */ = {isa = PBXFileReference; lastKnownFileType = "?"; name = UBWhiteboard.j; path = UBWhiteboard/UBWhiteboard.j; sourceTree = SOURCE_ROOT; };
+		C9BE4458BEE55639CAE6AA5B /* _Users_okennedy_Public_SlideSync_LogViewer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = _Users_okennedy_Public_SlideSync_LogViewer.h; path = .XcodeSupport/_Users_okennedy_Public_SlideSync_LogViewer.h; sourceTree = SOURCE_ROOT; };
 		D3034E1EB149184CB3024C64 /* xcc_general_include.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = xcc_general_include.h; path = .XcodeSupport/xcc_general_include.h; sourceTree = SOURCE_ROOT; };
+		DE484854BB4C57F1461C8075 /* UBGraphicsOverlay.j */ = {isa = PBXFileReference; lastKnownFileType = "?"; name = UBGraphicsOverlay.j; path = UBGraphicsOverlay/UBGraphicsOverlay.j; sourceTree = SOURCE_ROOT; };
 		F5AF411DB372828CFC836DAA /* _Users_okennedy_Public_SlideSync_ICON_ICON.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = _Users_okennedy_Public_SlideSync_ICON_ICON.m; path = .XcodeSupport/_Users_okennedy_Public_SlideSync_ICON_ICON.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -86,6 +100,12 @@
 				99C84555A8E68E9099300B11 /* _Users_okennedy_Public_SlideSync_ICON_ICONTableViewManager.m */,
 				3C914D6AAA80C4152D522EB2 /* _Users_okennedy_Public_SlideSync_SessionEditor.h */,
 				589A45E5B4831F3F47A7666D /* _Users_okennedy_Public_SlideSync_SessionEditor.m */,
+				5BF04788A14C606EF5C982A5 /* _Users_okennedy_Public_SlideSync_UBGraphicsOverlay_UBGraphicsOverlay.h */,
+				89F743A79195F04AF29A90E1 /* _Users_okennedy_Public_SlideSync_UBGraphicsOverlay_UBGraphicsOverlay.m */,
+				76F44FF5AE4E867C0CBEBB0E /* _Users_okennedy_Public_SlideSync_UBWhiteboard_UBWhiteboard.h */,
+				B0EB4EEB9D9AF96692593D08 /* _Users_okennedy_Public_SlideSync_UBWhiteboard_UBWhiteboard.m */,
+				C9BE4458BEE55639CAE6AA5B /* _Users_okennedy_Public_SlideSync_LogViewer.h */,
+				2D5E49DAA980F91B51B23C7B /* _Users_okennedy_Public_SlideSync_LogViewer.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -138,6 +158,9 @@
 				113C47308AD002E5F8848367 /* ICONObjectList.j */,
 				846348CBA8AF313DBA8E38C8 /* ICONTableViewManager.j */,
 				79D04F6F91CCE6ACA31AC6C9 /* SessionEditor.j */,
+				DE484854BB4C57F1461C8075 /* UBGraphicsOverlay.j */,
+				C1EF4773AA74EA43DE436433 /* UBWhiteboard.j */,
+				9CD0437BA7F722FE00439057 /* LogViewer.j */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -213,6 +236,11 @@
 				CB89484899621F8497766E30 /* _Users_okennedy_Public_SlideSync_ICON_ICONTableViewManager.m in Sources */,
 				F81A4273A9C5EEF39D577720 /* (null) in Sources */,
 				194644C092121C382F947D07 /* _Users_okennedy_Public_SlideSync_SessionEditor.m in Sources */,
+				FCE749E5B886ACBA221892D3 /* (null) in Sources */,
+				7B3D47248B015996BDA756FC /* _Users_okennedy_Public_SlideSync_UBGraphicsOverlay_UBGraphicsOverlay.m in Sources */,
+				68274E058E8A255DDB8E7F43 /* _Users_okennedy_Public_SlideSync_UBWhiteboard_UBWhiteboard.m in Sources */,
+				E2834912971F52D1D9769C81 /* (null) in Sources */,
+				9B934874880BEC609B49FA17 /* _Users_okennedy_Public_SlideSync_LogViewer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
