@@ -18,13 +18,14 @@ end.compact;
 
 out_files = files.map do |fname|
   out_fname = fname.sub(/\.htm/, "_converted.htm");
-  File.open(fname) do |inf|
+  IO.popen("iconv -f WINDOWS-1252 -t UTF-8 #{fname}") do |inf|
     File.open(out_fname, "w+") do |outf|
       outf.puts(
         inf.readlines.
           map {|l| l.chomp }.
           join("").
-          gsub(/<script>.*<\/script>/, "")
+          gsub(/<script>.*<\/script>/, "").
+          gsub(/charset=windows-1252/, "charset=utf-8")
       );
     end
   end
