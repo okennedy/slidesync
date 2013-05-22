@@ -1,0 +1,389 @@
+body
+	{width:755px;
+	height:566px;}
+.TB
+	{mso-special-format:nobullet•;}
+.T
+	{text-align:left;
+	font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-ascii-font-family:Georgia;
+	mso-fareast-font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-bidi-font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-hansi-font-family:Georgia;
+	color:white;
+	mso-color-index:0;
+	font-size:240%;}
+.BB
+	{mso-special-format:nobullet•;
+	color:#FF6600;}
+.B
+	{text-align:left;
+	font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-ascii-font-family:Georgia;
+	mso-fareast-font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-bidi-font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-hansi-font-family:Georgia;
+	color:white;
+	mso-color-index:0;
+	font-size:160%;}
+.B1B
+	{mso-special-format:bullet•;
+	color:#FF6633;
+	font-family:Times;
+	font-size:80%;}
+.B1
+	{font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-ascii-font-family:Georgia;
+	mso-fareast-font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-hansi-font-family:Georgia;
+	color:white;
+	mso-color-index:0;
+	font-size:160%;}
+.B2B
+	{mso-special-format:bullet•;
+	color:#FF6600;}
+.B2
+	{font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-ascii-font-family:Georgia;
+	mso-fareast-font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-hansi-font-family:Georgia;
+	color:white;
+	mso-color-index:0;
+	font-size:133%;}
+.B3B
+	{mso-special-format:bullet•;
+	color:#FF6600;
+	font-family:Times;
+	font-size:95%;}
+.B3
+	{font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-ascii-font-family:Georgia;
+	mso-fareast-font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-hansi-font-family:Georgia;
+	color:white;
+	mso-color-index:0;}
+.B4B
+	{mso-special-format:nobullet»;
+	color:white;
+	mso-color-index:0;}
+.B4
+	{font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-ascii-font-family:Georgia;
+	mso-fareast-font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-hansi-font-family:Georgia;
+	color:white;
+	mso-color-index:0;}
+.NB
+	{mso-special-format:nobullet•;}
+.N
+	{text-align:left;
+	font-family:Calibri;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:black;
+	mso-color-index:1;
+	font-size:80%;
+	mso-char-wrap:1;
+	mso-kinsoku-overflow:1;}
+.N1B
+	{mso-special-format:nobullet•;}
+.N1
+	{text-align:left;
+	font-family:Calibri;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:black;
+	mso-color-index:1;
+	font-size:80%;
+	mso-char-wrap:1;
+	mso-kinsoku-overflow:1;}
+.N2B
+	{mso-special-format:nobullet•;}
+.N2
+	{text-align:left;
+	font-family:Calibri;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:black;
+	mso-color-index:1;
+	font-size:80%;
+	mso-char-wrap:1;
+	mso-kinsoku-overflow:1;}
+.N3B
+	{mso-special-format:nobullet•;}
+.N3
+	{text-align:left;
+	font-family:Calibri;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:black;
+	mso-color-index:1;
+	font-size:80%;
+	mso-char-wrap:1;
+	mso-kinsoku-overflow:1;}
+.N4N
+	{mso-special-format:nobullet•;}
+.N4
+	{text-align:left;
+	font-family:Calibri;
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:black;
+	mso-color-index:1;
+	font-size:80%;
+	mso-char-wrap:1;
+	mso-kinsoku-overflow:1;}
+.OB
+	{mso-special-format:nobullet•;}
+.O
+	{text-align:left;
+	font-family:Times;
+	mso-ascii-font-family:Times;
+	mso-hansi-font-family:Times;
+	color:black;
+	mso-color-index:1;
+	font-size:160%;}
+.O1
+	{font-family:Times;
+	mso-ascii-font-family:Times;
+	mso-hansi-font-family:Times;
+	font-size:160%;}
+.O2
+	{font-family:Times;
+	mso-ascii-font-family:Times;
+	mso-hansi-font-family:Times;
+	font-size:160%;}
+.O3
+	{font-family:Times;
+	mso-ascii-font-family:Times;
+	mso-hansi-font-family:Times;
+	font-size:160%;}
+.O4
+	{font-family:Times;
+	mso-ascii-font-family:Times;
+	mso-hansi-font-family:Times;
+	font-size:160%;}
+.CBB
+	{mso-special-format:nobullet•;
+	color:#FF6600;}
+.CB
+	{text-align:center;
+	font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-ascii-font-family:Georgia;
+	mso-fareast-font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-bidi-font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-hansi-font-family:Georgia;
+	color:white;
+	mso-color-index:0;
+	font-size:160%;}
+.CB1B
+	{mso-special-format:nobullet•;
+	color:#FF6633;
+	font-family:Times;
+	font-size:80%;}
+.CB1
+	{font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-ascii-font-family:Georgia;
+	mso-fareast-font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-hansi-font-family:Georgia;
+	color:white;
+	mso-color-index:0;
+	font-size:160%;}
+.CB2B
+	{mso-special-format:nobullet•;
+	color:#FF6600;}
+.CB2
+	{font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-ascii-font-family:Georgia;
+	mso-fareast-font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-hansi-font-family:Georgia;
+	color:white;
+	mso-color-index:0;
+	font-size:133%;}
+.CB3B
+	{mso-special-format:nobullet•;
+	color:#FF6600;
+	font-family:Times;
+	font-size:95%;}
+.CB3
+	{font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-ascii-font-family:Georgia;
+	mso-fareast-font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-hansi-font-family:Georgia;
+	color:white;
+	mso-color-index:0;}
+.CB4B
+	{mso-special-format:nobullet»;
+	color:white;
+	mso-color-index:0;}
+.CB4
+	{font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-ascii-font-family:Georgia;
+	mso-fareast-font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-hansi-font-family:Georgia;
+	color:white;
+	mso-color-index:0;}
+.CTB
+	{mso-special-format:nobullet•;}
+.CT
+	{text-align:left;
+	font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-ascii-font-family:Georgia;
+	mso-fareast-font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-bidi-font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-hansi-font-family:Georgia;
+	color:white;
+	mso-color-index:0;
+	font-size:240%;}
+.HBB
+	{mso-special-format:nobullet•;
+	color:#FF6600;}
+.HB
+	{font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-ascii-font-family:Georgia;
+	mso-fareast-font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-bidi-font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-hansi-font-family:Georgia;
+	color:white;
+	mso-color-index:0;
+	font-size:133%;}
+.HB1B
+	{mso-special-format:bullet•;
+	color:#FF6633;
+	font-family:Times;
+	font-size:80%;}
+.HB1
+	{font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-ascii-font-family:Georgia;
+	mso-fareast-font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-hansi-font-family:Georgia;
+	color:white;
+	mso-color-index:0;
+	font-size:133%;}
+.HB2B
+	{mso-special-format:bullet•;
+	color:#FF6600;}
+.HB2
+	{font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-ascii-font-family:Georgia;
+	mso-fareast-font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-hansi-font-family:Georgia;
+	color:white;
+	mso-color-index:0;
+	font-size:120%;}
+.HB3B
+	{mso-special-format:bullet•;
+	color:#FF6600;
+	font-family:Times;
+	font-size:95%;}
+.HB3
+	{font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-ascii-font-family:Georgia;
+	mso-fareast-font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-hansi-font-family:Georgia;
+	color:white;
+	mso-color-index:0;}
+.HB4B
+	{mso-special-format:nobullet»;
+	color:white;
+	mso-color-index:0;}
+.HB4
+	{font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-ascii-font-family:Georgia;
+	mso-fareast-font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-hansi-font-family:Georgia;
+	color:white;
+	mso-color-index:0;}
+.QBB
+	{mso-special-format:nobullet•;
+	color:#FF6600;}
+.QB
+	{font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-ascii-font-family:Georgia;
+	mso-fareast-font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-bidi-font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-hansi-font-family:Georgia;
+	color:white;
+	mso-color-index:0;
+	font-size:120%;}
+.QB1B
+	{mso-special-format:bullet•;
+	color:#FF6633;
+	font-family:Times;
+	font-size:80%;}
+.QB1
+	{font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-ascii-font-family:Georgia;
+	mso-fareast-font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-hansi-font-family:Georgia;
+	color:white;
+	mso-color-index:0;
+	font-size:120%;}
+.QB2B
+	{mso-special-format:bullet•;
+	color:#FF6600;}
+.QB2
+	{font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-ascii-font-family:Georgia;
+	mso-fareast-font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-hansi-font-family:Georgia;
+	color:white;
+	mso-color-index:0;
+	font-size:106%;}
+.QB3B
+	{mso-special-format:bullet•;
+	color:#FF6600;
+	font-family:Times;
+	font-size:95%;}
+.QB3
+	{font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-ascii-font-family:Georgia;
+	mso-fareast-font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-hansi-font-family:Georgia;
+	color:white;
+	mso-color-index:0;}
+.QB4B
+	{mso-special-format:nobullet»;
+	color:white;
+	mso-color-index:0;}
+.QB4
+	{font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-ascii-font-family:Georgia;
+	mso-fareast-font-family:"\FF2D\FF33 \FF30\30B4\30B7\30C3\30AF";
+	mso-hansi-font-family:Georgia;
+	color:white;
+	mso-color-index:0;}
+.defaultB
+	{mso-special-format:nobullet•;}
+.default
+	{text-align:left;
+	font-family:Arial;
+	mso-ascii-font-family:Times;
+	mso-bidi-font-family:Arial;
+	mso-hansi-font-family:Times;
+	font-weight:normal;
+	font-style:normal;
+	text-decoration:none;
+	text-shadow:none;
+	text-effect:none;
+	mso-fareast-hint:no;
+	layout-flow:horizontal;
+	color:black;
+	mso-color-index:1;
+	font-size:160%;
+	mso-text-raise:0%;
+	mso-line-spacing:"100 0 0";
+	mso-margin-left-alt:0;
+	mso-text-indent-alt:0;
+	mso-char-wrap:1;
+	mso-kinsoku-overflow:1;
+	direction:ltr;
+	mso-word-wrap:1;
+	mso-vertical-align-special:baseline;
+	mso-ansi-language:EN-US;}
+a:link
+	{color:#009999 !important;}
+a:active
+	{color:#333399 !important;}
+a:visited
+	{color:#99CC00 !important;}

@@ -1,0 +1,44 @@
+<xml xmlns:v="urn:schemas-microsoft-com:vml"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:p="urn:schemas-microsoft-com:office:powerpoint"
+ xmlns:oa="urn:schemas-microsoft-com:office:activation">
+ <p:presentation sizeof="screen" gridspacingx="49152" gridspacingy="49152"
+  subsetembed="1">
+  <p:master id="3" slidesn="0,0" type="main" href="master03.htm"
+   xmlhref="master03.xml" template="Office Theme" layout="title_body"
+   slots="title,body,dateTime,footer,slideNumber">
+   <p:schemes>
+   </p:schemes>
+  </p:master>
+  <p:master id="200" slidesn="0,0" type="main" href="master200.htm"
+   xmlhref="master200.xml" template="1_Office Theme" layout="title_body"
+   slots="title,body,dateTime,footer,slideNumber">
+   <p:schemes>
+   </p:schemes>
+  </p:master>
+  <p:master id="1" slidesn="1CE5679,FD026FF0" type="notes" href="master01.htm"
+   layout="notes" slots="header,dateTime,slideImage,body,footer,slideNumber"/>
+  <p:slide id="2" slidesn="0,0" href="slide0002.htm"/>
+  <p:slide id="24" slidesn="0,0" href="slide0024.htm"/>
+  <p:slide id="3" slidesn="0,0" href="slide0003.htm"/>
+  <p:slide id="13" slidesn="0,0" href="slide0013.htm"/>
+  <p:slide id="28" slidesn="0,0" href="slide0028.htm"/>
+  <p:slide id="26" slidesn="0,0" href="slide0026.htm"/>
+  <p:slide id="15" slidesn="0,0" href="slide0015.htm"/>
+  <p:slide id="20" slidesn="0,0" href="slide0020.htm"/>
+  <p:slide id="21" slidesn="0,0" href="slide0021.htm"/>
+  <p:slide id="27" slidesn="0,0" href="slide0027.htm"/>
+  <p:slide id="17" slidesn="0,0" href="slide0017.htm"/>
+  <p:slide id="18" slidesn="0,0" href="slide0018.htm"/>
+  <p:slide id="19" slidesn="0,0" href="slide0019.htm"/>
+  <p:slide id="23" slidesn="0,0" href="slide0023.htm"/>
+  <p:viewstate type="slideView" scale="100" restoredleft="156" restoredtop="952"
+   manualadjusttop="t" hideoutlineicons="t"/>
+  <p:slideshowsettings pencolor="rgb(255,0,0)"/>
+  <p:kinsoku language="Japanese" level="levelOne"/>
+  <p:pptdocumentsettings framecolors="WhiteTextOnBlack" hideslideanimation="t"
+   browsersupport="v4"/>
+ </p:presentation>
+ <o:shapedefaults v:ext="edit" spidmax="18437">
+  <o:colormru v:ext="edit" colors="#9cf,#ccc,#ecd63f,#d5c139,#1c6cb5,#d58408,#f49709,#0a2196"/>
+ </o:shapedefaults></xml>

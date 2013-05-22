@@ -84,7 +84,9 @@
 
 - (void)reloadContent
 {
-  if(slideURL != null) { [self loadContent:slideURL]; }
+  if(slideURL != null) { 
+    [self loadContent:slideURL]; 
+  }
 }
 
 - (CPString)slideTitle
@@ -117,7 +119,13 @@
 
 - (void)formatSlide
 {
-  [contentView loadHTMLString:[self slideContent]];
+  if(content[currSlide].rawHTML){
+    [contentView loadHTMLString:content[currSlide].content];
+  } else if(content[currSlide].rawURL){
+    [contentView setMainFrameURL:content[currSlide].url];
+  } else {
+    [contentView loadHTMLString:[self slideContent]];
+  }
 }
 
 - (void)stepForward
