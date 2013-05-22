@@ -16,7 +16,7 @@
    <p:schemes>
    </p:schemes>
   </p:master>
-  <p:master id="1" slidesn="1CE5679,FD026FF0" type="notes" href="master01.htm"
+  <p:master id="1" slidesn="1CE570E,F5EBE800" type="notes" href="master01.htm"
    layout="notes" slots="header,dateTime,slideImage,body,footer,slideNumber"/>
   <p:slide id="2" slidesn="0,0" href="slide0002.htm"/>
   <p:slide id="24" slidesn="0,0" href="slide0024.htm"/>
@@ -32,13 +32,13 @@
   <p:slide id="18" slidesn="0,0" href="slide0018.htm"/>
   <p:slide id="19" slidesn="0,0" href="slide0019.htm"/>
   <p:slide id="23" slidesn="0,0" href="slide0023.htm"/>
-  <p:viewstate type="slideView" scale="100" restoredleft="156" restoredtop="952"
+  <p:viewstate type="slideView" scale="74" restoredleft="156" restoredtop="862"
    manualadjusttop="t" hideoutlineicons="t"/>
   <p:slideshowsettings pencolor="rgb(255,0,0)"/>
   <p:kinsoku language="Japanese" level="levelOne"/>
   <p:pptdocumentsettings framecolors="WhiteTextOnBlack" hideslideanimation="t"
    browsersupport="v4"/>
  </p:presentation>
- <o:shapedefaults v:ext="edit" spidmax="18437">
+ <o:shapedefaults v:ext="edit" spidmax="31749">
   <o:colormru v:ext="edit" colors="#9cf,#ccc,#ecd63f,#d5c139,#1c6cb5,#d58408,#f49709,#0a2196"/>
  </o:shapedefaults></xml>
