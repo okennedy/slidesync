@@ -155,10 +155,10 @@
 											</object>
 										</object>
 										<double key="NSRowHeight">17</double>
-										<int key="NSTvFlags">-702545920</int>
+										<int key="NSTvFlags">-702513152</int>
 										<reference key="NSDelegate"/>
 										<reference key="NSDataSource"/>
-										<int key="NSColumnAutoresizingStyle">4</int>
+										<int key="NSColumnAutoresizingStyle">1</int>
 										<int key="NSDraggingSourceMaskForLocal">15</int>
 										<int key="NSDraggingSourceMaskForNonLocal">0</int>
 										<bool key="NSAllowsTypeSelect">YES</bool>
@@ -191,7 +191,7 @@
 							<object class="NSScroller" id="280371182">
 								<reference key="NSNextResponder" ref="461710056"/>
 								<int key="NSvFlags">-2147483392</int>
-								<string key="NSFrame">{{1, 449}, {370, 15}}</string>
+								<string key="NSFrame">{{-100, -100}, {370, 15}}</string>
 								<reference key="NSSuperview" ref="461710056"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView"/>
@@ -220,7 +220,7 @@
 							</object>
 							<reference ref="844212009"/>
 						</array>
-						<string key="NSFrameSize">{372, 465}</string>
+						<string key="NSFrame">{{12, 9}, {372, 465}}</string>
 						<reference key="NSSuperview" ref="925612495"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="999866908"/>
@@ -237,7 +237,7 @@
 						<double key="NSMagnification">1</double>
 					</object>
 				</array>
-				<string key="NSFrameSize">{372, 465}</string>
+				<string key="NSFrameSize">{391, 483}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
 				<reference key="NSNextKeyView" ref="461710056"/>
